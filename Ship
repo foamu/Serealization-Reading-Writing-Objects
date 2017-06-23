@@ -1,0 +1,22 @@
+package example;
+
+import java.io.Serializable;
+
+public class Ship implements Serializable {
+	
+	private static final long serialVersionUID = 2394979767295126620L;
+	
+	private String shipName;
+	private String shipClass;
+	
+	public Ship(String shipName, String shipClass) {
+		this.shipName = shipName;
+		this.shipClass = shipClass;
+		
+	}
+	
+	public String toString() {
+		return "Ship [Name: " + shipName + ", Class: " + shipClass+"]";
+	}
+
+}
